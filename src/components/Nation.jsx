@@ -1,11 +1,11 @@
 import { useState } from "react"
-import { useEffect } from "react"
-import Spinner from "../UI/Spinner";
+//import { useEffect } from "react"
+//import Spinner from "../UI/Spinner";
 import { useNation } from "../context/Context";
 
-function Nation() {
-  const [country, setCountery]=useState();
-  const {nations,loading}=useNation();
+//function Nation() {
+  //const [country, setCountery]=useState();
+  //const {nations,loading}=useNation();
 //   useEffect(function(){
 //     async function fetchData(){
 //       const response = await fetch("https://restcountries.com/v3.1/all")
@@ -18,22 +18,45 @@ function Nation() {
 //     fetchData();
 //   },[])
   //if(!loading) return <Spinner/>
-  return (
-    <div className="md:w-1/6 md:h-full md:overflow-y-scroll md:p-4 md:bg-stone-700 hidden md:block">
-      {
-        nations.map((country,index)=>{
-          return(
-            <div key={index}>
-              <h1>{country.name.common}</h1>
-              <img src={country.flags.png} alt="" className="size-16" />
+//   return (
+//     <div className="w-1/4 h-full overflow-y-scroll md:p-4 md:bg-gray-700 hidden md:block">
+//       {
+//         nations.map((country,index)=>{
+//           return(
+//             <div key={index} className="flex items-center gap-2 py-2 px-2 border-b-2 border-stone-500">
+//               <img src={country.flags.svg} alt="" className=" size-max w-16 " />
+//               <h1 className="text-gray-300 ">{country.name.common}</h1>
+
              
-            </div>
-          )
-        })
-      }
+//             </div>
+//           )
+//         })
+//       }
       
+//     </div>
+//   )
+// }
+
+function Nation({ onCountrySelect }) {
+  const { nations } = useNation();
+
+  return (
+    <div className="w-1/4 h-full overflow-y-scroll md:p-4 md:bg-gray-700  md:block relative">
+      {nations.map((country, index) => (
+        <div
+          key={index}
+          className="flex items-center gap-2 py-2 px-2 border-b-2 border-stone-500 cursor-pointer"
+          onClick={() => onCountrySelect(country.latlng)}  // Pass the coordinates to the Map component
+        >
+          <img src={country.flags.svg} alt="" className="size-max w-16" />
+          <h1 className="text-gray-300">{country.name.common}</h1>
+        </div>
+      ))}
     </div>
-  )
+  );
 }
 
 export default Nation;
+
+
+

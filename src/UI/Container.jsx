@@ -1,24 +1,51 @@
-import React from 'react'
-
-
-
-import Nation from '../components/Nation'
-import Map from '../components/Map'
+import Nation from '../components/Nation';
+import Map from '../components/Map';
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faList } from '@fortawesome/free-solid-svg-icons';
+import CountrySearch from '../components/search';
 
 export default function Container() {
+  const [selectedCountryCoords, setSelectedCountryCoords] = useState(null);
+  const [isClicked, setIsClicked] = useState(false);
+
+  function handleClick() {
+    setIsClicked(!isClicked);
+  }
+
   return (
     <>
-    <div className='bg-stone-800 flex justify-evenly '>
-      <span>
-        <a href="#" className='text-white'>Map</a>
-      </span>
-      <input type='text' className='border-white my-3 border-spacing-3 pl-10'/>
-    </div>
-    <div className='h-screen w-screen flex'>
-        <Nation/>
-        <Map/>
+      {/* Top navigation bar */}
+      <div className="bg-stone-800 flex justify-between w-full fixed top-0 left-0 z-20 p-5">
+        {/* Left side navigation items */}
+        <div className="flex justify-start pr-4 align-middle hidden md:block">
+          <span className="flex">
+            <a href="#" className="text-white pr-4">Map</a>
+            <h3 className="font-mono text-xl text-orange-500">world country</h3>
+            <button className="text-white ml-4" onClick={handleClick}>
+              <FontAwesomeIcon icon={faList} />
+            </button>
+          </span>
+        </div>
 
-    </div>
+        {/* CountrySearch Component */}
+        <div className="relative w-full max-w-md mx-auto z-30">
+          <CountrySearch onCountrySelect={setSelectedCountryCoords} />
+        </div>
+
+        {/* Right side button (Mobile view) */}
+        <div className="flex justify-end mr-4 align-middle">
+          <button className="text-white md:hidden" onClick={handleClick}>
+            <FontAwesomeIcon icon={faList} />
+          </button>
+        </div>
+      </div>
+
+      {/* Main content with padding to prevent overlap with the navbar */}
+      <div className="h-screen w-full flex pt-20 relative z-10">
+        {isClicked && <Nation onCountrySelect={setSelectedCountryCoords} />}
+        <Map selectedCountryCoords={selectedCountryCoords} />
+      </div>
     </>
-  )
+  );
 }
