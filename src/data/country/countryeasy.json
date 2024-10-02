@@ -1,0 +1,45 @@
+[
+    {
+      "questionNumber": 1,
+      "question": "What country has the capital city of 'Rome'?",
+      "answers": ["Italy", "Spain", "Greece", "France"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 2,
+      "question": "What country has the capital city of 'Cairo'?",
+      "answers": ["Egypt", "Algeria", "Morocco", "Sudan"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 3,
+      "question": "What country has the capital city of 'Buenos Aires'?",
+      "answers": ["Argentina", "Chile", "Peru", "Uruguay"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 4,
+      "question": "What country has the capital city of 'New Delhi'?",
+      "answers": ["India", "Pakistan", "Nepal", "Bangladesh"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 5,
+      "question": "What country has the capital city of 'Stockholm'?",
+      "answers": ["Sweden", "Norway", "Denmark", "Finland"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 6,
+      "question": "What country has the capital city of 'Nairobi'?",
+      "answers": ["Kenya", "Tanzania", "Uganda", "Ethiopia"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 7,
+      "question": "What country has the capital city of 'Wellington'?",
+      "answers": ["New Zealand", "Australia", "Fiji", "Papua New Guinea"],
+      "correctAnswer": 0
+    }
+  ]
+  

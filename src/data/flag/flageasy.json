@@ -1,0 +1,45 @@
+[
+    {
+      "questionNumber": 1,
+      "question": "Which flag belongs to Germany?",
+      "answers": ["🇫🇷", "🇩🇪", "🇮🇹", "🇪🇸"],
+      "correctAnswer": 1
+    },
+    {
+      "questionNumber": 2,
+      "question": "Which flag belongs to the United Kingdom?",
+      "answers": ["🇦🇺", "🇺🇸", "🇬🇧", "🇳🇿"],
+      "correctAnswer": 2
+    },
+    {
+      "questionNumber": 3,
+      "question": "Which flag belongs to Japan?",
+      "answers": ["🇨🇳", "🇯🇵", "🇰🇷", "🇹🇼"],
+      "correctAnswer": 1
+    },
+    {
+      "questionNumber": 4,
+      "question": "Which flag belongs to Brazil?",
+      "answers": ["🇲🇽", "🇧🇷", "🇦🇷", "🇨🇱"],
+      "correctAnswer": 1
+    },
+    {
+      "questionNumber": 5,
+      "question": "Which flag belongs to South Africa?",
+      "answers": ["🇰🇪", "🇿🇦", "🇳🇬", "🇪🇬"],
+      "correctAnswer": 1
+    },
+    {
+      "questionNumber": 6,
+      "question": "Which flag belongs to India?",
+      "answers": ["🇵🇰", "🇮🇳", "🇧🇩", "🇱🇰"],
+      "correctAnswer": 1
+    },
+    {
+      "questionNumber": 7,
+      "question": "Which flag belongs to Canada?",
+      "answers": ["🇺🇸", "🇨🇦", "🇲🇽", "🇧🇿"],
+      "correctAnswer": 1
+    }
+  ]
+  

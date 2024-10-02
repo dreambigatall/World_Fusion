@@ -1,20 +1,14 @@
+/* eslint-disable react/prop-types */
 
 import { MapContainer, TileLayer, Marker, Popup, useMap,GeoJSON } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import { useEffect, useState } from 'react';
+import { useEffect} from 'react';
 import { useNation } from '../context/Context';
 import L from 'leaflet';
-import CountrySearch from './search';
 
 export default function Map({ selectedCountryCoords }) {
   const position = [9.145, 40.4897]; // Default center position for the map (Ethiopia)
-  const [isHovered, setIsHovered] = useState(false)
-  function handleMouseEnter() {
-    setIsHovered(true);
-  }
-  function handelMouseOut() {
-    setIsHovered(false);
-  }
+  
   const { nations,geoJson } = useNation();
   const countryStyle = {
     fillColor: '#3388ff',   // Light blue fill
@@ -69,7 +63,7 @@ export default function Map({ selectedCountryCoords }) {
         />
 
         {/* Fly to the selected country when coords change */}
-        {selectedCountryCoords && <FlyToLocation coords={selectedCountryCoords} />}
+        {selectedCountryCoords && <FlyToLocation coords={selectedCountryCoords} /> }
 
         {geoJson && (
           <GeoJSON data={geoJson} style={countryStyle} />
@@ -78,6 +72,7 @@ export default function Map({ selectedCountryCoords }) {
 
         {/* Display markers for each country */}
         {nations.map((country, index) => (
+
           <Marker
             position={country.latlng}
             key={index}
@@ -149,9 +144,74 @@ export default function Map({ selectedCountryCoords }) {
               </div>
               
             </Popup>
+            <Popup>
+              <div className="p-2 text-left">
+                {/* Flag and Coat of Arms */}
+                <div className="flex items-center mb-2">
+                  <img
+                    src={country.flags.svg}
+                    alt={`${country.name.common} flag`}
+                    className="w-8 h-auto mr-2 border-stone-700 border-2"
+                  />
+                  {country.coatOfArms.svg && (
+                    <img
+                      src={country.coatOfArms.svg}
+                      alt={`${country.name.common} coat of arms`}
+                      className="w-8 h-8"
+                    />
+                  )}
+                </div>
+
+                {/* Country Details */}
+                <div>
+                  <p className="text-lg font-semibold mb-1">{country.name.common}</p>
+                  <p className="text-sm">
+                    <span className="font-semibold">Capital: </span>
+                    <span className="font-bold">{country.capital}</span>
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-semibold">Independent: </span>
+                    {country.independent === true ? "Yes" : "No"}
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-semibold">Region: </span>
+                    {country.continents}
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-semibold">Subregion: </span>
+                    {country.subregion}
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-semibold">Area: </span>
+                    {country.area.toLocaleString()} square km
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-semibold">Population: </span>
+                    {country.population.toLocaleString()} people
+                  </p>
+
+                  {/* Wikipedia Link */}
+                  <p className="text-sm mt-2">
+                    <a
+                      href={`https://en.wikipedia.org/wiki/${country.name.common.replace(
+                        /\s/g,
+                        "_"
+                      )}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:underline"
+                    >
+                      Wikipedia
+                    </a>
+                  </p>
+                </div>
+              </div>
+              
+            </Popup>
 
           </Marker>
-        ))}
+                    
+))}
         
       </MapContainer>
     </div>

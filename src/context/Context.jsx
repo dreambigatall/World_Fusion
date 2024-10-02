@@ -17,7 +17,7 @@ export default function Context({children}) {
         }
         fethingGeojson();
     },[])
-    console.log(geoJson);
+    //console.log(geoJson);
 
     useEffect(function() {
         async function fetchingData() { // Typo in function name fixed here as well
@@ -40,7 +40,7 @@ export default function Context({children}) {
         fetchingData(); // Fixed typo here as well
     }, []);
 
-    //console.log(nations);
+    console.log(nations);
 
     return (
         <nationsContext.Provider value={{nations, loading, geoJson}}>

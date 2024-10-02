@@ -1,0 +1,45 @@
+[
+    {
+      "questionNumber": 1,
+      "question": "Which flag belongs to Italy?",
+      "answers": ["🇧🇷", "🇮🇹", "🇪🇸", "🇫🇷"],
+      "correctAnswer": 1
+    },
+    {
+      "questionNumber": 2,
+      "question": "Which flag belongs to South Korea?",
+      "answers": ["🇯🇵", "🇰🇵", "🇰🇷", "🇨🇳"],
+      "correctAnswer": 2
+    },
+    {
+      "questionNumber": 3,
+      "question": "Which flag belongs to Australia?",
+      "answers": ["🇳🇿", "🇬🇧", "🇦🇺", "🇿🇦"],
+      "correctAnswer": 2
+    },
+    {
+      "questionNumber": 4,
+      "question": "Which flag belongs to Sweden?",
+      "answers": ["🇳🇴", "🇸🇪", "🇩🇰", "🇫🇮"],
+      "correctAnswer": 1
+    },
+    {
+      "questionNumber": 5,
+      "question": "Which flag belongs to Russia?",
+      "answers": ["🇺🇦", "🇧🇾", "🇷🇺", "🇵🇱"],
+      "correctAnswer": 2
+    },
+    {
+      "questionNumber": 6,
+      "question": "Which flag belongs to Argentina?",
+      "answers": ["🇨🇱", "🇦🇷", "🇺🇾", "🇵🇪"],
+      "correctAnswer": 1
+    },
+    {
+      "questionNumber": 7,
+      "question": "Which flag belongs to Turkey?",
+      "answers": ["🇲🇦", "🇪🇬", "🇹🇷", "🇮🇷"],
+      "correctAnswer": 2
+    }
+  ]
+  

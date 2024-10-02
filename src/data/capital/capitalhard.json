@@ -1,0 +1,33 @@
+[
+    {
+      "questionNumber": 1,
+      "question": "What is the capital of Mongolia?",
+      "answers": ["Ulaanbaatar", "Astana", "Tashkent", "Bishkek"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 2,
+      "question": "What is the capital of Bhutan?",
+      "answers": ["Thimphu", "Kathmandu", "Colombo", "Male"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 3,
+      "question": "What is the capital of Bolivia?",
+      "answers": ["Sucre", "La Paz", "Quito", "Asuncion"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 4,
+      "question": "What is the capital of Madagascar?",
+      "answers": ["Antananarivo", "Port Louis", "Maputo", "Lusaka"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 5,
+      "question": "What is the capital of Suriname?",
+      "answers": ["Paramaribo", "Georgetown", "Cayenne", "Bridgetown"],
+      "correctAnswer": 0
+    }
+  ]
+  

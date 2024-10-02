@@ -1,0 +1,45 @@
+[
+    {
+      "questionNumber": 1,
+      "question": "What country has the capital city of 'Canberra'?",
+      "answers": ["Australia", "New Zealand", "Canada", "United Kingdom"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 2,
+      "question": "What country has the capital city of 'Ankara'?",
+      "answers": ["Turkey", "Greece", "Cyprus", "Bulgaria"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 3,
+      "question": "What country has the capital city of 'Helsinki'?",
+      "answers": ["Finland", "Sweden", "Norway", "Denmark"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 4,
+      "question": "What country has the capital city of 'Seoul'?",
+      "answers": ["South Korea", "Japan", "China", "North Korea"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 5,
+      "question": "What country has the capital city of 'Brasília'?",
+      "answers": ["Brazil", "Argentina", "Chile", "Peru"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 6,
+      "question": "What country has the capital city of 'Kuala Lumpur'?",
+      "answers": ["Malaysia", "Indonesia", "Thailand", "Vietnam"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 7,
+      "question": "What country has the capital city of 'Havana'?",
+      "answers": ["Cuba", "Dominican Republic", "Puerto Rico", "Jamaica"],
+      "correctAnswer": 0
+    }
+  ]
+  

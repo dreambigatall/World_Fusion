@@ -1,0 +1,45 @@
+[
+    {
+      "questionNumber": 1,
+      "question": "Which flag belongs to Mozambique?",
+      "answers": ["🇦🇴", "🇲🇼", "🇲🇿", "🇿🇲"],
+      "correctAnswer": 2
+    },
+    {
+      "questionNumber": 2,
+      "question": "Which flag belongs to Kyrgyzstan?",
+      "answers": ["🇰🇬", "🇹🇯", "🇰🇿", "🇺🇿"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 3,
+      "question": "Which flag belongs to Bhutan?",
+      "answers": ["🇳🇵", "🇧🇹", "🇱🇰", "🇧🇩"],
+      "correctAnswer": 1
+    },
+    {
+      "questionNumber": 4,
+      "question": "Which flag belongs to Belize?",
+      "answers": ["🇧🇿", "🇸🇻", "🇭🇳", "🇨🇷"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 5,
+      "question": "Which flag belongs to Suriname?",
+      "answers": ["🇬🇾", "🇸🇷", "🇬🇫", "🇻🇪"],
+      "correctAnswer": 1
+    },
+    {
+      "questionNumber": 6,
+      "question": "Which flag belongs to the Maldives?",
+      "answers": ["🇲🇻", "🇲🇾", "🇸🇬", "🇲🇲"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 7,
+      "question": "Which flag belongs to Eswatini?",
+      "answers": ["🇱🇸", "🇸🇿", "🇧🇼", "🇲🇼"],
+      "correctAnswer": 1
+    }
+  ]
+  

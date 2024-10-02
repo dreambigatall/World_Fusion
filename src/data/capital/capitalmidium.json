@@ -1,0 +1,33 @@
+[
+    {
+      "questionNumber": 1,
+      "question": "What is the capital of Germany?",
+      "answers": ["Berlin", "Munich", "Frankfurt", "Hamburg"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 2,
+      "question": "What is the capital of India?",
+      "answers": ["New Delhi", "Mumbai", "Bangalore", "Kolkata"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 3,
+      "question": "What is the capital of South Africa?",
+      "answers": ["Pretoria", "Johannesburg", "Cape Town", "Durban"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 4,
+      "question": "What is the capital of Mexico?",
+      "answers": ["Mexico City", "Guadalajara", "Monterrey", "Cancun"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 5,
+      "question": "What is the capital of Saudi Arabia?",
+      "answers": ["Riyadh", "Jeddah", "Mecca", "Dammam"],
+      "correctAnswer": 0
+    }
+  ]
+  

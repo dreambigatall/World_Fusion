@@ -1,0 +1,45 @@
+[
+    {
+      "questionNumber": 1,
+      "question": "What country has the capital city of 'Baku'?",
+      "answers": ["Azerbaijan", "Armenia", "Georgia", "Kazakhstan"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 2,
+      "question": "What country has the capital city of 'Ashgabat'?",
+      "answers": ["Turkmenistan", "Uzbekistan", "Tajikistan", "Kyrgyzstan"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 3,
+      "question": "What country has the capital city of 'Lusaka'?",
+      "answers": ["Zambia", "Zimbabwe", "Malawi", "Botswana"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 4,
+      "question": "What country has the capital city of 'Dodoma'?",
+      "answers": ["Tanzania", "Kenya", "Uganda", "Rwanda"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 5,
+      "question": "What country has the capital city of 'Thimphu'?",
+      "answers": ["Bhutan", "Nepal", "Sri Lanka", "Maldives"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 6,
+      "question": "What country has the capital city of 'Port Moresby'?",
+      "answers": ["Papua New Guinea", "Fiji", "Vanuatu", "Solomon Islands"],
+      "correctAnswer": 0
+    },
+    {
+      "questionNumber": 7,
+      "question": "What country has the capital city of 'Yamoussoukro'?",
+      "answers": ["Ivory Coast", "Ghana", "Senegal", "Guinea"],
+      "correctAnswer": 0
+    }
+  ]
+  
