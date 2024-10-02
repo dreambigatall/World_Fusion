@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faList } from '@fortawesome/free-solid-svg-icons';
 import CountrySearch from '../components/search';
+import { Link } from 'react-router-dom';
 
 export default function Container() {
   const [selectedCountryCoords, setSelectedCountryCoords] = useState(null);
@@ -20,9 +21,9 @@ export default function Container() {
         {/* Left side navigation items */}
         <div className="flex justify-start pr-4 align-middle hidden md:block">
           <span className="flex">
-            <a href="#" className="text-white pr-4">Map</a>
-            <h3 className="font-mono text-xl text-orange-500">world country</h3>
-            <button className="text-white ml-4" onClick={handleClick}>
+            <Link to="/" className="text-white pr-4"><img src='https://www.worldcountriesquiz.com/assets/img/globe.png'/></Link>
+            <h3 className="font-mono text-xl text-orange-500 mt-3">world Fussion</h3>
+            <button className="text-white ml-4 mt-1" onClick={handleClick}>
               <FontAwesomeIcon icon={faList} />
             </button>
           </span>

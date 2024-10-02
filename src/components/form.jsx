@@ -20,8 +20,8 @@ export default function Form({ dispatch, highScore }) {
   return (
     <form onSubmit={(e) => handleSubmit(e)}>
       <div>
-        <h2 className='ml-4 text-red-700 font-extrabold'>Select Topic</h2>
-        <div className=' p-4 justify-evenly rounded-lg relative w-28 flex'>
+        <h2 className='ml-4 text-red-700 font-extrabold font-serif mt-10 text-xl'>Select Topic</h2>
+        <div className=' p-4 justify-evenly rounded-lg relative w-28 flex mt-5'>
           <Topic
             topic='City'
             setInputs={setInputs}
@@ -45,7 +45,7 @@ export default function Form({ dispatch, highScore }) {
         </div>
       </div>
       <div>
-        <h3 className='text-red-700 font-extrabold p-4'>Select Mode</h3>
+        <h2 className='text-red-700 font-extrabold p-4 font-serif text-xl'>Select Mode</h2>
         <div className='flex justify-evenly  w-32 p-4 m-4'>
           <Input
             id='EASY'
@@ -74,9 +74,9 @@ export default function Form({ dispatch, highScore }) {
         bgColor="bg-stone-900"
         outline='6px solid var(--dominant-secondary)'
         type='submit'
-        className='bg-red-700'
+        className='bg-blue-700 ml-3 mt-[-6px]'
       >
-        Go
+       Let'Go
       </Button>
     </form>
   );

@@ -49,7 +49,7 @@ export default function Map({ selectedCountryCoords }) {
       
       <MapContainer
         center={position}
-        zoom={8}
+        zoom={4}
         minZoom={2}
         scrollWheelZoom={true}
         className="w-full h-full"

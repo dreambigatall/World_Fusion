@@ -255,7 +255,7 @@ function AppQuetion() {
   ] = useReducer(reducer, initialState);
 
   return (
-    <div className='app' theme={theme}>
+    <div  theme={theme}>
       <div id='dialog'></div>
       {(status === 'form' || status === 'finish') && (
         <Header setTheme={setTheme} theme={theme} />
@@ -263,9 +263,9 @@ function AppQuetion() {
       <Main>
         {status === 'form' && (
           <>
-            <h2 className='title-secondary'>
-              Challenge Yourself, Master the Frontend!
-            </h2>
+            <h2 class="text-xl font-bold text-left m-3 text-blue-500">
+  Navigate the Globe, Conquer Geography!
+</h2>
             <Form
               dispatch={dispatch}
               highScore={highScore}

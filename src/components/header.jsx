@@ -1,36 +1,7 @@
 /* eslint-disable react/prop-types */
-// import { HiMiniSun, HiMiniMoon } from 'react-icons/hi2';
 
-// export default function Header({ theme, setTheme }) {
-//   function bgColorChange() {
-//     const color = theme === 'dark' ? '#100f1c' : '#ffffff';
-//     document.body.style.background = color;
-//   }
-//   bgColorChange();
-
-//   return (
-//     <header className='header'>
-//       <h1 className='title'>‖FrontEnd Fusion</h1>
-//       <div className='empty'></div>
-//       <div className='container-switch'>
-//         {theme === 'light' ? (
-//           <HiMiniMoon className='icon' />
-//         ) : (
-//           <HiMiniSun className='icon' />
-//         )}
-//         <div
-//           className='body-switch'
-//           onClick={() =>
-//             setTheme((theme) => (theme === 'light' ? 'dark' : 'light'))
-//           }
-//         >
-//           <div className={`switch ${theme}`}></div>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// }
 import { HiMiniSun, HiMiniMoon } from 'react-icons/hi2';
+import { Link } from 'react-router-dom';
 
 export default function Header({ theme, setTheme }) {
   function bgColorChange() {
@@ -41,7 +12,14 @@ export default function Header({ theme, setTheme }) {
 
   return (
     <header className="flex justify-between items-center p-4 bg-gray-800 shadow-lg text-white">
-      <h1 className="text-xl font-bold tracking-wide">‖FrontEnd Fusion</h1>
+      <div className='flex'>
+      
+
+<Link to="/"><img src="https://www.worldcountriesquiz.com/assets/img/globe.png"/></Link>
+
+<h1 className="text-xl font-bold tracking-wide mt-3 font-serif">World  Fusion  </h1>
+      </div>
+        
       <div className="flex items-center space-x-4">
         {theme === 'light' ? (
           <HiMiniMoon className="w-6 h-6 text-gray-400" />
