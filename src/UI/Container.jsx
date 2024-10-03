@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faList } from '@fortawesome/free-solid-svg-icons';
 import CountrySearch from '../components/search';
 import { Link } from 'react-router-dom';
+import AIChatInterface from '../ai';
 
 export default function Container() {
   const [selectedCountryCoords, setSelectedCountryCoords] = useState(null);
@@ -46,6 +47,7 @@ export default function Container() {
       <div className="h-screen w-full flex pt-20 relative z-10">
         {isClicked && <Nation onCountrySelect={setSelectedCountryCoords} />}
         <Map selectedCountryCoords={selectedCountryCoords} />
+        {<AIChatInterface/>}
       </div>
     </>
   );
