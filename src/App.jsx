@@ -13,7 +13,7 @@ export default function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Container/>}/>
-        <Route path="/quetion" element={<AppQuetion/>}/>
+        <Route path="/question" element={<AppQuetion/>}/>
         <Route path='/ai' element={<Ai/>}/>
       </Routes>
       </BrowserRouter>

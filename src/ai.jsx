@@ -122,6 +122,7 @@
 
 import React, { useState } from "react";
 import axios from "axios";
+import LoadingSpinner from "./UI/Spinner";
 
 const AIChatInterface = () => {
   const [question, setQuestion] = useState("");
@@ -171,14 +172,14 @@ const AIChatInterface = () => {
           <span role="img" aria-label="icon" className="text-2xl">🧐</span>
         </div>
         <div>
-          <h1 className="text-2xl font-bold text-blue-500">Hi, Halid!</h1>
+          <h1 className="text-2xl font-bold text-blue-500">Hi, Geographer!</h1>
           <p className="text-gray-600">How can I help?</p>
         </div>
       </div>
 
       <div className="overflow-y-auto rounded-lg shadow-lg p-4 mt-4 h-72">
         {generatingAnswer ? (
-          <p className="text-gray-500 font-bold">Generating answer...</p>
+         <LoadingSpinner/>
         ) : (
           answer && answer.map((section, index) => (
             <div key={index}>
