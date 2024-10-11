@@ -20,23 +20,23 @@
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-6 flex flex-col justify-end mt-28">
+    <footer className="bg-gray-900 text-white py-6 flex flex-col justify-end mt-36">
       <div className="container mx-auto text-center">
         <span className="block text-lg font-semibold">
           Designed and Developed by ⚡
         </span>
         <span className="block text-xl font-bold mt-2">
           <a
-            href="https://www.linkedin.com/in/sujaygowda/"
+            href="https://www.linkedin.com/in/khalidreact/"
             target="_blank"
             rel="noreferrer"
             className="text-blue-400 hover:underline"
           >
-            SUJAY GOWDA 💀
+            Khalid Mohammed 
           </a>
         </span>
         <span className="block text-sm text-gray-400 mt-4">
-          LAST UPDATED | 06 DEC 2023 🕛
+          LAST UPDATED | 11 oct 2024 🕛
         </span>
       </div>
     </footer>
