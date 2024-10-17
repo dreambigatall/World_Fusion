@@ -10,7 +10,7 @@ import Ai from './ai'
 export default function App() {
   return (
     <Context>
-      <BrowserRouter>
+      <BrowserRouter basename='/World_Fusion/'>
       <Routes>
         <Route path='/' element={<Container/>}/>
         <Route path="/question" element={<AppQuetion/>}/>
