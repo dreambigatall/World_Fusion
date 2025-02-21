@@ -46,36 +46,62 @@
 // }
 
 // export default fetchAiData;
-import axios from 'axios';
+// import axios from 'axios';
 
-const apiKey = import.meta.env.VITE_API_GENERATIVE_LANGUAGE_CLIENT;
+// const apiKey = import.meta.env.VITE_API_GENERATIVE_LANGUAGE_CLIENT;
+
+// const fetchAiData = async ({ question }) => {
+//   try {
+//     const response = await axios({
+//       url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`, // Using text-bison-001 model
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       data: {
+//         prompt: {
+//           // The request expects 'prompt' to be an object with 'text'
+//           text: `tele me abot ${question} this country`,
+//         },
+//       },
+//     });
+//     return response.data;
+//   } catch (err) {
+//     // Error handling and logging
+//     if (err.response) {
+//       console.error('API error:', err.response.data);
+//     } else {
+//       console.error('Request error:', err.message);
+//     }
+//     throw new Error('Error fetching AI response');
+
+//   }
+// };
+
+// export default fetchAiData;
+
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const fetchAiData = async ({ question }) => {
-  try {
-    const response = await axios({
-      url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`, // Using text-bison-001 model
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      data: {
-        prompt: {
-          // The request expects 'prompt' to be an object with 'text'
-          text: `tele me abot ${question} this country`,
-        },
-      },
-    });
-    return response.data;
-  } catch (err) {
-    // Error handling and logging
-    if (err.response) {
-      console.error('API error:', err.response.data);
-    } else {
-      console.error('Request error:', err.message);
+    try {
+      const genAI = new GoogleGenerativeAI({
+        apiKey: import.meta.env.VITE_API_GENERATIVE_LANGUAGE_CLIENT,
+      });
+      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const prompt = `tell me about this country in detail ${question}`;
+      const response = await model.generateContent({ prompt });
+      const result = response.response.text;
+        
+      return result;
+    } catch (err) {
+      // Error handling and logging
+      if (err.response) {
+        console.error('API error:', err.response.data);
+      } else {
+        console.error('Request error:', err.message);
+      }
+      throw new Error('Error fetching AI response');
+  
     }
-    throw new Error('Error fetching AI response');
-
-  }
-};
-
-export default fetchAiData;
+  };
+  export default fetchAiData;
