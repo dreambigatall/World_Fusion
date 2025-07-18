@@ -86,7 +86,7 @@
 //   );
 // }
 
-import Button from './Button';
+import Button from './button';
 import Progress from './proggres';
 
 export default function Questions({
