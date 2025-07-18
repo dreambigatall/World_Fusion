@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Input from './inputs';
-import Button from './Button';
+import Button from './button'
 import Topic from './Topic';
 
 export default function Form({ dispatch, highScore }) {
