@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-import Button from "./Button";
+import Button from "./button";
 
 export default function AlertScreen({ dispatch, setDialog }) {
   return (
