@@ -12,7 +12,7 @@ function reducer(state,action){
     switch(action.type){
         case "country/loading":
             return {...state, loading: true}
-        case "contry/dataReceived":
+        case "country/dataReceived":
             return {...state, nations: action.payload, loading: false}
         case "country/dataFailed":
             return {...state, loading: false}
@@ -45,22 +45,20 @@ export default function Context({children}) {
             try {
 
                 //setLoading(true);
-                const res = await fetch("https://restcountries.com/v3.1/all");
+                const res = await fetch("https://restcountries.com/v3.1/all?fields=name,capital,region,flags");
                 if (!res.ok) {
                     //setLoading(false);
                     dispatch({type: "country/dataFailed"});
                     throw new Error("Something went wrong");
                 }
                 const data = await res.json();
+                console.log(data)
                 //setNations(data); // Fixed typo here as well: setNationes -> setNations
-                dispatch({type: "contry/dataReceived", payload: data});
+                dispatch({type: "country/dataReceived", payload: data});
             } catch (err) {
                 console.log(err);
                 //setLoading(false);
                 dispatch({type: "country/dataFailed"});
-            } finally {
-               // setLoading(false);
-               dispatch({type: "country/dataFailed"});
             }
         }
         fetchingData(); // Fixed typo here as well

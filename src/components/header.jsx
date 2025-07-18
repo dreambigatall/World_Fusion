@@ -2,7 +2,6 @@
 
 import { HiMiniSun, HiMiniMoon } from 'react-icons/hi2';
 import { Link } from 'react-router-dom';
-
 export default function Header({ theme, setTheme }) {
   function bgColorChange() {
     const color = theme === 'dark' ? '#100f1c' : '#ffffff';
@@ -15,7 +14,7 @@ export default function Header({ theme, setTheme }) {
       <div className='flex'>
       
 
-<Link to="/"><img src="https://www.worldcountriesquiz.com/assets/img/globe.png"/></Link>
+<Link to="/"><img src=""  /></Link>
 
 <h1 className="text-xl font-bold tracking-wide mt-3 font-serif">World  Fusion  </h1>
       </div>
