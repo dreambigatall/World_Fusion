@@ -14,7 +14,7 @@ export default function Header({ theme, setTheme }) {
       <div className='flex'>
       
 
-<Link to="/"><img src=""  /></Link>
+<Link to="/"><img src="https://www.worldcountriesquiz.com/assets/img/globe.png"  /></Link>
 
 <h1 className="text-xl font-bold tracking-wide mt-3 font-serif">World  Fusion  </h1>
       </div>
